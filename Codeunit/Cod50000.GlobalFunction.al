@@ -8,7 +8,7 @@ codeunit 50000 "GlobalFunction"
     begin
         if Customer.Get(SalesHeader."Sell-to Customer No.") then begin
             SalesHeader."No. Series" := Customer."Sales Order No. Series";
-            NoSeriesCode := Customer."Sales Order No. Series";
+            //NoSeriesCode := Customer."Sales Order No. Series";
         end;
     end;
 
