@@ -1,4 +1,4 @@
-tableextension 50079 CompanyInformationExt extends "Company Information"
+tableextension 50003 CompanyInformationExt extends "Company Information"
 {//CS 2025/4/8 FDD001 Table Ext for add Field to Company Information Table by Bobby
     fields
     {

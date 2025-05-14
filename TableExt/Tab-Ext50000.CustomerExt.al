@@ -1,4 +1,4 @@
-tableextension 50018 CustomerExt extends Customer
+tableextension 50000 CustomerExt extends Customer
 {//CS 2025/4/8 FDD002 Table Ext for add Field to Customer Table by Bobby
     fields
     {

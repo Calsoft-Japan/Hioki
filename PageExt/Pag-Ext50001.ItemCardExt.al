@@ -1,10 +1,10 @@
-pageextension 50001 CompanyInformationExt extends "Company Information"
+pageextension 50001 ItemCardExt extends "Item Card"
 {//CS 2025/4/8 Page Ext for add Field to Company Information Page by Bobby
     layout
     {
-        addbefore(Picture)
+        addafter(VariantMandatoryDefaultNo)
         {
-            field("Office Code"; Rec."Office Code")
+            field("HS Code"; Rec."HS Code")
             {
                 ApplicationArea = All;
             }

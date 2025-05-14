@@ -8,7 +8,7 @@ codeunit 50000 "GlobalFunction"
     begin
         if Customer.Get(SalesHeader."Sell-to Customer No.") then begin
             SalesHeader."No. Series" := Customer."Sales Order No. Series";
-            //NoSeriesCode := Customer."Sales Order No. Series";
+            NoSeriesCode := Customer."Sales Order No. Series";
         end;
     end;
 
@@ -23,5 +23,18 @@ codeunit 50000 "GlobalFunction"
             PurchaseHeader."No." := CompanyInformation."Office Code" + '-' + RequisitionLine."Sales Order No.";
     end;
 
+    //FDD004_Commercial Invoice 2025/5/8 Bobby
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales-Post", OnInsertShipmentHeaderOnBeforeTransferfieldsToSalesShptHeader, '', false, false)]
+    local procedure "Sales-Post_OnInsertShipmentHeaderOnBeforeTransferfieldsToSalesShptHeader"(var SalesHeader: Record "Sales Header")
+    begin
+        SalesHeader.CalcFields("Case Mark");
+    end;
+
+    //FDD004_Commercial Invoice 2025/5/8 Bobby
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales-Post", OnInsertInvoiceHeaderOnBeforeSalesInvHeaderTransferFields, '', false, false)]
+    local procedure "Sales-Post_OnInsertInvoiceHeaderOnBeforeSalesInvHeaderTransferFields"(var SalesHeader: Record "Sales Header")
+    begin
+        SalesHeader.CalcFields("Case Mark");
+    end;
 
 }

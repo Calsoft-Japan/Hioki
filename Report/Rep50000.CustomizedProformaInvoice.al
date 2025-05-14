@@ -12,7 +12,7 @@ report 50000 "Customized Proforma Invoice"
         {
             DataItemTableView = sorting("Document Type", "No.");
             RequestFilterFields = "No.", "Sell-to Customer No.", "No. Printed";
-            RequestFilterHeading = 'Pro Forma Invoice';
+            RequestFilterHeading = 'Customized Proforma Invoice';
             column(DocumentDate; Format("Document Date", 0, 4))
             {
             }
@@ -440,6 +440,7 @@ report 50000 "Customized Proforma Invoice"
                 CurrReport.Language := LanguageMgt.GetLanguageIdOrDefault("Language Code");
                 CurrReport.FormatRegion := LanguageMgt.GetFormatRegionOrDefault("Format Region");
                 FormatDocumentFields(Header);
+
                 BillToCountryName := '';
                 if CountryRegion.Get(Header."Bill-to Country/Region Code") then
                     BillToCountryName := CountryRegion.Name;
