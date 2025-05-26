@@ -289,12 +289,15 @@ report 50000 "Customized Proforma Invoice"
             column(VATRegNoLbl; CompanyInformation.GetVATRegistrationNumberLbl())
             {
             }
+            column(Consignee; Consignee)
+            {
+            }
             column(ShowWorkDescription; ShowWorkDescription) { }
             dataitem(Line; "Sales Line")
             {
                 DataItemLink = "Document Type" = field("Document Type"), "Document No." = field("No.");
                 DataItemLinkReference = Header;
-                DataItemTableView = sorting("Document No.", "Line No.");
+                DataItemTableView = sorting("Document No.", "Line No.") where(Type = const(item));
                 column(ItemDescription; Description)
                 {
                 }
@@ -459,8 +462,8 @@ report 50000 "Customized Proforma Invoice"
                     BankInformation[1] := BankAccount.Name;
                     BankInformation[2] := BankAccount.Address;
                     BankInformation[3] := BankAccount."Address 2";
-                    BankInformation[4] := BankAccount.City;
-                    BankInformation[5] := BankAccount."Post Code";
+                    BankInformation[4] := BankAccount."Post Code";
+                    BankInformation[5] := BankAccount.City;
                     BankInformation[6] := '';
                     if CountryRegion.Get(BankAccount."Country/Region Code") then
                         BankInformation[6] := CountryRegion.Name;
@@ -468,6 +471,19 @@ report 50000 "Customized Proforma Invoice"
                     BankInformation[8] := BankAccount."SWIFT Code";
                     BankInformation[9] := BankAccount."Currency Code";
                 end;
+
+                Consignee := '';
+                Consignee += '<b>' + Header."Bill-to Name" + '</b>';
+                if Header."Bill-to Address" <> '' then
+                    Consignee += '<br>' + Header."Bill-to Address";
+                if Header."Bill-to Address 2" <> '' then
+                    Consignee += '<br>' + Header."Bill-to Address 2";
+                if Header."Bill-to Post Code" <> '' then
+                    Consignee += '<br>' + Header."Bill-to Post Code";
+                if Header."Bill-to City" <> '' then
+                    Consignee += '<br>' + Header."Bill-to City";
+                if BillToCountryName <> '' then
+                    Consignee += '<br>' + BillToCountryName;
                 CalcFields("Work Description");
                 ShowWorkDescription := "Work Description".HasValue();
             end;
@@ -579,6 +595,7 @@ report 50000 "Customized Proforma Invoice"
         ShowWorkDescription: Boolean;
         HideLinesWithZeroQuantity: Boolean;
         BankInformation: array[9] of Text[100];
+        Consignee: Text;
 
     local procedure FormatDocumentFields(SalesHeader: Record "Sales Header")
     var

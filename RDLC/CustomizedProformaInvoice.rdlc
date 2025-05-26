@@ -1383,7 +1383,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>="&lt;b&gt;"+First(Fields!BillToCustomerName.Value, "DataSet_Result")+"&lt;/b&gt;&lt;br&gt;"+First(Fields!BillToAddress.Value, "DataSet_Result")+"&lt;br&gt;"+First(Fields!BillToAddress2.Value, "DataSet_Result")+"&lt;br&gt;"+First(Fields!BillToCity.Value, "DataSet_Result")+"&lt;br&gt;"+First(Fields!BillToPostCode.Value, "DataSet_Result")+"&lt;br&gt;"+First(Fields!BillToCountryName.Value, "DataSet_Result")</Value>
+                      <Value>=First(Fields!Consignee.Value, "DataSet_Result")</Value>
                       <MarkupType>HTML</MarkupType>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
@@ -1993,7 +1993,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>8.72473cm</Height>
+          <Height>8.6189cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -2558,10 +2558,10 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
               <Source>Embedded</Source>
               <Value>seal</Value>
               <Sizing>FitProportional</Sizing>
-              <Top>6.10902cm</Top>
-              <Left>14.32553cm</Left>
-              <Height>2.61571cm</Height>
-              <Width>3.06104cm</Width>
+              <Top>5.73861cm</Top>
+              <Left>14.29026cm</Left>
+              <Height>2.88029cm</Height>
+              <Width>4.70265cm</Width>
               <ZIndex>13</ZIndex>
               <Style>
                 <Border>
@@ -3295,6 +3295,9 @@ QARTEx4Zgiv2an+pYI4ZGiOzax/3rwHQcl/3cw/2dp/3nTGN3K73ft+S8fb3gr8ZULr0g3/4ZcE4fY/4
         </Field>
         <Field Name="VATRegNoLbl">
           <DataField>VATRegNoLbl</DataField>
+        </Field>
+        <Field Name="Consignee">
+          <DataField>Consignee</DataField>
         </Field>
         <Field Name="ShowWorkDescription">
           <DataField>ShowWorkDescription</DataField>
