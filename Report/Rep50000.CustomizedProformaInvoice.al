@@ -241,9 +241,9 @@ report 50000 "Customized Proforma Invoice"
             column(ItemLbl; Item.TableCaption())
             {
             }
-            column(TariffLbl; Item.FieldCaption("Tariff No."))
+            /*column(TariffLbl; Item.FieldCaption("Tariff No."))
             {
-            }
+            }*/
             column(UnitPriceLbl; Item.FieldCaption("Unit Price"))
             {
             }
@@ -297,7 +297,7 @@ report 50000 "Customized Proforma Invoice"
             {
                 DataItemLink = "Document Type" = field("Document Type"), "Document No." = field("No.");
                 DataItemLinkReference = Header;
-                DataItemTableView = sorting("Document No.", "Line No.") where(Type = const(item));
+                DataItemTableView = sorting("Document No.", "Line No.");// where(Type = filter("Charge (Item)" | Item));
                 column(ItemDescription; Description)
                 {
                 }
@@ -305,9 +305,9 @@ report 50000 "Customized Proforma Invoice"
                 {
 
                 }
-                column(Tariff; Item."Tariff No.")
+                /*column(Tariff; Item."Tariff No.")
                 {
-                }
+                }*/
                 column(Quantity; "Qty. to Invoice")
                 {
                 }
@@ -336,11 +336,17 @@ report 50000 "Customized Proforma Invoice"
                     Location: Record Location;
                     AutoFormatType: Enum "Auto Format";
                 begin
-                    GetItemForRec("No.");
+                    if Type = Type::Item then begin
+                        GetItemForRec("No.");
+                    end;
+
                     OnBeforeLineOnAfterGetRecord(Header, Line);
                     CountryOfManufacturing := '';
-                    if CountryRegion.Get(Item."Country/Region of Origin Code") then
-                        CountryOfManufacturing := CountryRegion.Name;
+                    if Type = Type::Item then begin
+                        if CountryRegion.Get(Item."Country/Region of Origin Code") then
+                            CountryOfManufacturing := CountryRegion.Name;
+                    end;
+
                     if IsShipment() then
                         if Location.RequireShipment("Location Code") and ("Quantity Shipped" = 0) then
                             "Qty. to Invoice" := Quantity;
@@ -378,8 +384,8 @@ report 50000 "Customized Proforma Invoice"
                     TotalAmount := 0;
                     TotalVATAmount := 0;
                     TotalAmountInclVAT := 0;
-                    SetRange(Type, Type::Item);
-
+                    //SetRange(Type, Type::Item);
+                    //SetFilter(Type, '%1|%2', Type::Item, Type::"Charge (Item)");
                     OnAfterLineOnPreDataItem(Header, Line);
                 end;
             }
@@ -443,7 +449,6 @@ report 50000 "Customized Proforma Invoice"
                 CurrReport.Language := LanguageMgt.GetLanguageIdOrDefault("Language Code");
                 CurrReport.FormatRegion := LanguageMgt.GetFormatRegionOrDefault("Format Region");
                 FormatDocumentFields(Header);
-
                 BillToCountryName := '';
                 if CountryRegion.Get(Header."Bill-to Country/Region Code") then
                     BillToCountryName := CountryRegion.Name;

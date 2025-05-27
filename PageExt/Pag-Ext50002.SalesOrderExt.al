@@ -26,31 +26,7 @@ pageextension 50002 SalesOrderExt extends "Sales Order"
     }
     actions
     {
-        addafter(ProformaInvoice)
-        {
-            action("CommercialInvoice")
-            {
-                ApplicationArea = all;
-                Caption = 'Print Commercial Invoice';
-                Image = Print;
-                trigger OnAction()
-                var
-                    SalesHeader: Record "Sales Header";
-                begin
-                    SalesHeader.Reset;
-                    SalesHeader := Rec;
-                    SalesHeader.SetRecFilter;
-                    Report.Run(Report::"Commercial Invoice", true, false, SalesHeader);
-                end;
-            }
 
-        }
-        addafter("ProformaInvoice_Promoted")
-        {
-            actionref("CommercialInvoice_Promoted"; "CommercialInvoice")
-            {
-            }
-        }
     }
     var
         CaseMark: Text;

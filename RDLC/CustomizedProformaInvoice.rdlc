@@ -310,7 +310,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!Price.Value</Value>
+                                                    <Value>=IIF(Fields!Quantity.Value = 0,"",Fields!Price.Value)</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                     </Style>
@@ -1993,7 +1993,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>8.6189cm</Height>
+          <Height>8.27494cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -2558,7 +2558,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
               <Source>Embedded</Source>
               <Value>seal</Value>
               <Sizing>FitProportional</Sizing>
-              <Top>5.73861cm</Top>
+              <Top>5.31528cm</Top>
               <Left>14.29026cm</Left>
               <Height>2.88029cm</Height>
               <Width>4.70265cm</Width>
@@ -2613,7 +2613,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
               <Sizing>FitProportional</Sizing>
               <Top>6.59614cm</Top>
               <Left>10.4592cm</Left>
-              <Height>2.02276cm</Height>
+              <Height>1.59943cm</Height>
               <Width>2.4656cm</Width>
               <ZIndex>15</ZIndex>
               <Style>
@@ -3248,9 +3248,6 @@ QARTEx4Zgiv2an+pYI4ZGiOzax/3rwHQcl/3cw/2dp/3nTGN3K73ft+S8fb3gr8ZULr0g3/4ZcE4fY/4
         <Field Name="ItemLbl">
           <DataField>ItemLbl</DataField>
         </Field>
-        <Field Name="TariffLbl">
-          <DataField>TariffLbl</DataField>
-        </Field>
         <Field Name="UnitPriceLbl">
           <DataField>UnitPriceLbl</DataField>
         </Field>
@@ -3307,9 +3304,6 @@ QARTEx4Zgiv2an+pYI4ZGiOzax/3rwHQcl/3cw/2dp/3nTGN3K73ft+S8fb3gr8ZULr0g3/4ZcE4fY/4
         </Field>
         <Field Name="CountryOfManufacturing">
           <DataField>CountryOfManufacturing</DataField>
-        </Field>
-        <Field Name="Tariff">
-          <DataField>Tariff</DataField>
         </Field>
         <Field Name="Quantity">
           <DataField>Quantity</DataField>
