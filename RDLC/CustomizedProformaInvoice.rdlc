@@ -1118,11 +1118,11 @@ Cstr(Fields!CompanyHomePage.Value) + Chr(177) +
 Cstr(Fields!CompanyPhoneNo.Value) + Chr(177) +
 Cstr(Fields!BankInformation1.Value) + Chr(177) +
 Cstr(Fields!BankInformation2.Value)+","+Cstr(Fields!BankInformation3.Value) + Chr(177) +
-Cstr(Fields!BankInformation4.Value)+","+Cstr(Fields!BankInformation5.Value)+","+Cstr(Fields!BankInformation6.Value) + Chr(177) +
+Cstr(Fields!BankAddressInformation1.Value) + Chr(177) +
 Cstr(Fields!BankInformation7.Value) + Chr(177) +
 Cstr(Fields!BankInformation8.Value) + Chr(177) +
 Cstr(Fields!BankInformation9.Value) + Chr(177) +
-Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidden>
+Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                               </Visibility>
                               <Style>
                                 <Border>
@@ -2122,7 +2122,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
               <Top>0.51196cm</Top>
               <Left>2.3cm</Left>
               <Height>0.16in</Height>
-              <Width>6.95066cm</Width>
+              <Width>9.56122cm</Width>
               <ZIndex>3</ZIndex>
               <Style>
                 <Border>
@@ -2315,7 +2315,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
               <Top>0.91836cm</Top>
               <Left>2.3cm</Left>
               <Height>0.16in</Height>
-              <Width>6.95066cm</Width>
+              <Width>9.56122cm</Width>
               <ZIndex>5</ZIndex>
               <Style>
                 <Border>
@@ -2346,7 +2346,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
               <Top>1.32476cm</Top>
               <Left>2.3cm</Left>
               <Height>0.16in</Height>
-              <Width>6.95066cm</Width>
+              <Width>9.56122cm</Width>
               <ZIndex>6</ZIndex>
               <Style>
                 <Border>
@@ -2378,7 +2378,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
               <Top>2.13756cm</Top>
               <Left>2.3cm</Left>
               <Height>0.16in</Height>
-              <Width>6.95066cm</Width>
+              <Width>9.56122cm</Width>
               <ZIndex>7</ZIndex>
               <Style>
                 <Border>
@@ -2410,7 +2410,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
               <Top>2.54396cm</Top>
               <Left>2.3cm</Left>
               <Height>0.16in</Height>
-              <Width>6.95066cm</Width>
+              <Width>9.56122cm</Width>
               <ZIndex>8</ZIndex>
               <Style>
                 <Border>
@@ -2544,7 +2544,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
               <Top>2.95036cm</Top>
               <Left>2.3cm</Left>
               <Height>0.16in</Height>
-              <Width>6.95066cm</Width>
+              <Width>9.56122cm</Width>
               <ZIndex>12</ZIndex>
               <Style>
                 <Border>
@@ -2558,7 +2558,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
               <Source>Embedded</Source>
               <Value>seal</Value>
               <Sizing>FitProportional</Sizing>
-              <Top>5.31528cm</Top>
+              <Top>4.99816cm</Top>
               <Left>14.29026cm</Left>
               <Height>2.88029cm</Height>
               <Width>4.70265cm</Width>
@@ -2683,7 +2683,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
               <Top>1.73116cm</Top>
               <Left>2.3cm</Left>
               <Height>0.16in</Height>
-              <Width>6.95066cm</Width>
+              <Width>9.56122cm</Width>
               <ZIndex>17</ZIndex>
               <Style>
                 <Border>
@@ -3298,6 +3298,12 @@ QARTEx4Zgiv2an+pYI4ZGiOzax/3rwHQcl/3cw/2dp/3nTGN3K73ft+S8fb3gr8ZULr0g3/4ZcE4fY/4
         </Field>
         <Field Name="ShowWorkDescription">
           <DataField>ShowWorkDescription</DataField>
+        </Field>
+        <Field Name="BankAddressInformation1">
+          <DataField>BankAddressInformation1</DataField>
+        </Field>
+        <Field Name="BankAddressInformation2">
+          <DataField>BankAddressInformation2</DataField>
         </Field>
         <Field Name="ItemDescription">
           <DataField>ItemDescription</DataField>

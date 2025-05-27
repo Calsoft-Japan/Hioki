@@ -293,6 +293,12 @@ report 50000 "Customized Proforma Invoice"
             {
             }
             column(ShowWorkDescription; ShowWorkDescription) { }
+            column(BankAddressInformation1; BankAddressInformation1)
+            {
+            }
+            column(BankAddressInformation2; BankAddressInformation2)
+            {
+            }
             dataitem(Line; "Sales Line")
             {
                 DataItemLink = "Document Type" = field("Document Type"), "Document No." = field("No.");
@@ -472,6 +478,14 @@ report 50000 "Customized Proforma Invoice"
                     BankInformation[6] := '';
                     if CountryRegion.Get(BankAccount."Country/Region Code") then
                         BankInformation[6] := CountryRegion.Name;
+                    BankAddressInformation1 := '';
+                    if BankInformation[4] <> '' then
+                        BankAddressInformation1 := BankInformation[4];
+                    if BankInformation[5] <> '' then
+                        BankAddressInformation1 += ',' + BankInformation[5];
+                    if BankInformation[6] <> '' then
+                        BankAddressInformation1 += ',' + BankInformation[6];
+
                     BankInformation[7] := BankAccount.IBAN;
                     BankInformation[8] := BankAccount."SWIFT Code";
                     BankInformation[9] := BankAccount."Currency Code";
@@ -489,6 +503,12 @@ report 50000 "Customized Proforma Invoice"
                     Consignee += '<br>' + Header."Bill-to City";
                 if BillToCountryName <> '' then
                     Consignee += '<br>' + BillToCountryName;
+
+                BankAddressInformation2 := '';
+                if CompanyAddress[4] <> '' then
+                    BankAddressInformation2 := CompanyAddress[4];
+                if CompanyAddress[5] <> '' then
+                    BankAddressInformation2 += ',' + CompanyAddress[5];
                 CalcFields("Work Description");
                 ShowWorkDescription := "Work Description".HasValue();
             end;
@@ -601,6 +621,8 @@ report 50000 "Customized Proforma Invoice"
         HideLinesWithZeroQuantity: Boolean;
         BankInformation: array[9] of Text[100];
         Consignee: Text;
+        BankAddressInformation1: Text;
+        BankAddressInformation2: Text;
 
     local procedure FormatDocumentFields(SalesHeader: Record "Sales Header")
     var
