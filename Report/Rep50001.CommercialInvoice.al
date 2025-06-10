@@ -515,6 +515,9 @@ report 50001 "Commercial Invoice"
             column(PurchaseOrderInformation; PurchaseOrderInformation)
             {
             }
+            column(Consignee; Consignee)
+            {
+            }
             dataitem(Line; "Sales Invoice Line")
             {
                 DataItemLink = "Document No." = field("No.");
@@ -1284,6 +1287,20 @@ report 50001 "Commercial Invoice"
                     BankInformation[8] := BankAccount."SWIFT Code";
                     BankInformation[9] := BankAccount."Currency Code";
                 end;
+
+                Consignee := '';
+                Consignee += '<b>' + Header."Bill-to Name" + '</b>';
+                if Header."Bill-to Address" <> '' then
+                    Consignee += '<br>' + Header."Bill-to Address";
+                if Header."Bill-to Address 2" <> '' then
+                    Consignee += '<br>' + Header."Bill-to Address 2";
+                if Header."Bill-to Post Code" <> '' then
+                    Consignee += '<br>' + Header."Bill-to Post Code";
+                if Header."Bill-to City" <> '' then
+                    Consignee += '<br>' + Header."Bill-to City";
+                if BillToCountryName <> '' then
+                    Consignee += '<br>' + BillToCountryName;
+
                 TotalQuantity := 0;
                 TotalSubTotal := 0;
                 TotalInvDiscAmount := 0;
@@ -1561,6 +1578,7 @@ report 50001 "Commercial Invoice"
         BillToCountryName: Text[50];
         ShiptoCountryName: Text[50];
         HSCode: text[50];
+        Consignee: Text;
 
     local procedure LogInteractionTemplateExists(): Boolean
     begin

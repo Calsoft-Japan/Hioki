@@ -1216,7 +1216,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Last(Fields!TotalQuantity.Value)</Value>
+                                                    <Value>=Last(Fields!TotalQuantity.Value)+“ pcs”</Value>
                                                     <Style>
                                                       <FontWeight>Normal</FontWeight>
                                                     </Style>
@@ -1613,7 +1613,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=IIF(Last(Fields!TotalVATAmount.Value)&gt;0,"",Last(Fields!TotalQuantity.Value))</Value>
+                                                    <Value>=IIF(Last(Fields!TotalVATAmount.Value)&gt;0,"",Last(Fields!TotalQuantity.Value)+“ pcs”)</Value>
                                                     <Style />
                                                   </TextRun>
                                                 </TextRuns>
@@ -2058,7 +2058,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>="&lt;b&gt;"+First(Fields!BillToCustomerName.Value, "DataSet_Result")+"&lt;/b&gt;&lt;br&gt;"+First(Fields!BillToAddress.Value, "DataSet_Result")+"&lt;br&gt;"+First(Fields!BillToAddress2.Value, "DataSet_Result")+"&lt;br&gt;"+First(Fields!BillToCity.Value, "DataSet_Result")+"&lt;br&gt;"+First(Fields!BillToPostCode.Value, "DataSet_Result")+"&lt;br&gt;"+First(Fields!BillToCountryName.Value, "DataSet_Result")</Value>
+                      <Value>=First(Fields!Consignee.Value, "DataSet_Result")</Value>
                       <MarkupType>HTML</MarkupType>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
@@ -2315,20 +2315,6 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
-            <Image Name="Image1">
-              <Source>Embedded</Source>
-              <Value>seal</Value>
-              <Sizing>FitProportional</Sizing>
-              <Top>1.08765cm</Top>
-              <Left>3.53009cm</Left>
-              <Height>2.51026cm</Height>
-              <Width>3.64793cm</Width>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Image>
             <Textbox Name="Textbox40">
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
@@ -2355,7 +2341,6 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
               <Left>0.10558cm</Left>
               <Height>0.45184cm</Height>
               <Width>2.21425cm</Width>
-              <ZIndex>1</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -2375,7 +2360,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
               <Left>0.10558cm</Left>
               <Height>1.28231cm</Height>
               <Width>3.11984cm</Width>
-              <ZIndex>2</ZIndex>
+              <ZIndex>1</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -2408,7 +2393,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
               <Left>0.10558cm</Left>
               <Height>0.67028cm</Height>
               <Width>3.38924cm</Width>
-              <ZIndex>3</ZIndex>
+              <ZIndex>2</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -2441,7 +2426,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
               <Left>10.28738cm</Left>
               <Height>0.6cm</Height>
               <Width>8.7408cm</Width>
-              <ZIndex>4</ZIndex>
+              <ZIndex>3</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -2732,7 +2717,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
               <Left>10.08297cm</Left>
               <Height>3.84722cm</Height>
               <Width>8.98352cm</Width>
-              <ZIndex>5</ZIndex>
+              <ZIndex>4</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -3569,6 +3554,9 @@ QARTEx4Zgiv2an+pYI4ZGiOzax/3rwHQcl/3cw/2dp/3nTGN3K73ft+S8fb3gr8ZULr0g3/4ZcE4fY/4
         </Field>
         <Field Name="PurchaseOrderInformation">
           <DataField>PurchaseOrderInformation</DataField>
+        </Field>
+        <Field Name="Consignee">
+          <DataField>Consignee</DataField>
         </Field>
         <Field Name="LineNo_Line">
           <DataField>LineNo_Line</DataField>

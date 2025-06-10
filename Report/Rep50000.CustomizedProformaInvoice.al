@@ -472,7 +472,12 @@ report 50000 "Customized Proforma Invoice"
                 if BankAccount.FindFirst() then begin
                     BankInformation[1] := BankAccount.Name;
                     BankInformation[2] := BankAccount.Address;
-                    BankInformation[3] := BankAccount."Address 2";
+
+                    if BankAccount."Address 2" <> '' then
+                        BankInformation[3] := ', ' + BankAccount."Address 2"
+                    else
+                        BankInformation[3] := '';
+
                     BankInformation[4] := BankAccount."Post Code";
                     BankInformation[5] := BankAccount.City;
                     BankInformation[6] := '';
@@ -482,9 +487,9 @@ report 50000 "Customized Proforma Invoice"
                     if BankInformation[4] <> '' then
                         BankAddressInformation1 := BankInformation[4];
                     if BankInformation[5] <> '' then
-                        BankAddressInformation1 += ',' + BankInformation[5];
+                        BankAddressInformation1 += ', ' + BankInformation[5];
                     if BankInformation[6] <> '' then
-                        BankAddressInformation1 += ',' + BankInformation[6];
+                        BankAddressInformation1 += ', ' + BankInformation[6];
 
                     BankInformation[7] := BankAccount.IBAN;
                     BankInformation[8] := BankAccount."SWIFT Code";
@@ -495,12 +500,18 @@ report 50000 "Customized Proforma Invoice"
                 Consignee += '<b>' + Header."Bill-to Name" + '</b>';
                 if Header."Bill-to Address" <> '' then
                     Consignee += '<br>' + Header."Bill-to Address";
+
                 if Header."Bill-to Address 2" <> '' then
                     Consignee += '<br>' + Header."Bill-to Address 2";
+
                 if Header."Bill-to Post Code" <> '' then
                     Consignee += '<br>' + Header."Bill-to Post Code";
-                if Header."Bill-to City" <> '' then
+
+                if (Header."Bill-to City" <> '') and (Header."Bill-to Post Code" <> '') then
+                    Consignee += ' ' + Header."Bill-to City"
+                else if Header."Bill-to City" <> '' then
                     Consignee += '<br>' + Header."Bill-to City";
+
                 if BillToCountryName <> '' then
                     Consignee += '<br>' + BillToCountryName;
 
@@ -508,7 +519,7 @@ report 50000 "Customized Proforma Invoice"
                 if CompanyAddress[4] <> '' then
                     BankAddressInformation2 := CompanyAddress[4];
                 if CompanyAddress[5] <> '' then
-                    BankAddressInformation2 += ',' + CompanyAddress[5];
+                    BankAddressInformation2 += ', ' + CompanyAddress[5];
                 CalcFields("Work Description");
                 ShowWorkDescription := "Work Description".HasValue();
             end;

@@ -1117,7 +1117,7 @@ Cstr(Fields!CompanyEMail.Value) + Chr(177) +
 Cstr(Fields!CompanyHomePage.Value) + Chr(177) +
 Cstr(Fields!CompanyPhoneNo.Value) + Chr(177) +
 Cstr(Fields!BankInformation1.Value) + Chr(177) +
-Cstr(Fields!BankInformation2.Value)+","+Cstr(Fields!BankInformation3.Value) + Chr(177) +
+Cstr(Fields!BankInformation2.Value)+ Cstr(Fields!BankInformation3.Value) + Chr(177) +
 Cstr(Fields!BankAddressInformation1.Value) + Chr(177) +
 Cstr(Fields!BankInformation7.Value) + Chr(177) +
 Cstr(Fields!BankInformation8.Value) + Chr(177) +
@@ -1550,7 +1550,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=First(Fields!ShipFromAddress1.Value, "DataSet_Result")+","+First(Fields!ShipFromAddress2.Value, "DataSet_Result")</Value>
+                      <Value>=First(Fields!ShipFromAddress1.Value, "DataSet_Result")+", "+First(Fields!ShipFromAddress2.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -1581,7 +1581,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=First(Fields!ShipToAddress1.Value, "DataSet_Result")+","+First(Fields!ShipToAddress2.Value, "DataSet_Result")</Value>
+                      <Value>=First(Fields!ShipToAddress1.Value, "DataSet_Result")+", "+First(Fields!ShipToAddress2.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -2104,7 +2104,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>="&lt;b&gt;Beneficiary:&lt;/b&gt;"+Code.GetData(15)</Value>
+                      <Value>="&lt;b&gt;Beneficiary: &lt;/b&gt;"+Code.GetData(15)</Value>
                       <MarkupType>HTML</MarkupType>
                       <Style>
                         <FontStyle>Normal</FontStyle>
@@ -2300,7 +2300,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>="&lt;b&gt;Beneficiary Address:&lt;/b&gt;"+Code.GetData(16)</Value>
+                      <Value>="&lt;b&gt;Beneficiary Address: &lt;/b&gt;"+Code.GetData(16)</Value>
                       <MarkupType>HTML</MarkupType>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
@@ -2363,7 +2363,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>="&lt;b&gt;Bank Name:&lt;/b&gt;"+Code.GetData(27)</Value>
+                      <Value>="&lt;b&gt;Bank Name: &lt;/b&gt;"+Code.GetData(27)</Value>
                       <MarkupType>HTML</MarkupType>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
@@ -2395,7 +2395,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>="&lt;b&gt;Bank Address:&lt;/b&gt;" + Code.GetData(28)</Value>
+                      <Value>="&lt;b&gt;Bank Address: &lt;/b&gt;" + Code.GetData(28)</Value>
                       <MarkupType>HTML</MarkupType>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
@@ -2427,7 +2427,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>="&lt;b&gt;IBAN:&lt;/b&gt;" + Code.GetData(30)</Value>
+                      <Value>="&lt;b&gt;IBAN: &lt;/b&gt;" + Code.GetData(30)</Value>
                       <MarkupType>HTML</MarkupType>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
@@ -2461,7 +2461,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>="&lt;b&gt;Swift Code:&lt;/b&gt;" + Code.GetData(31)</Value>
+                      <Value>="&lt;b&gt;Swift Code: &lt;/b&gt;" + Code.GetData(31)</Value>
                       <MarkupType>HTML</MarkupType>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
@@ -2495,7 +2495,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>="&lt;b&gt;Currency:&lt;/b&gt;" + Code.GetData(32)</Value>
+                      <Value>="&lt;b&gt;Currency: &lt;/b&gt;" + Code.GetData(32)</Value>
                       <MarkupType>HTML</MarkupType>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
