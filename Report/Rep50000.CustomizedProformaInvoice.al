@@ -451,6 +451,7 @@ report 50000 "Customized Proforma Invoice"
             trigger OnAfterGetRecord()
             var
                 BankAccount: Record "Bank Account";
+                FormatAddress: Codeunit "Format Address";
             begin
                 CurrReport.Language := LanguageMgt.GetLanguageIdOrDefault("Language Code");
                 CurrReport.FormatRegion := LanguageMgt.GetFormatRegionOrDefault("Format Region");
@@ -470,6 +471,10 @@ report 50000 "Customized Proforma Invoice"
                 BankAccount.SetRange("Use as Default for Currency", true);
                 BankAccount.SetRange("Currency Code", "Currency Code");
                 if BankAccount.FindFirst() then begin
+                    /*FormatAddress.FormatAddr(BankInformation, BankAccount.Name, '', '', BankAccount.Address, BankAccount."Address 2",
+                BankAccount.City, BankAccount."Post Code", '', BankAccount."Country/Region Code");
+                    BankAddressInformation1 := BankInformation[1] + '<br>' + BankInformation[2] + '<br>' + BankInformation[3] + '<br>' + BankInformation[4] + '<br>' + BankInformation[5] + '<br>' + BankInformation[6];
+                    */
                     BankInformation[1] := BankAccount.Name;
                     BankInformation[2] := BankAccount.Address;
 
@@ -483,20 +488,32 @@ report 50000 "Customized Proforma Invoice"
                     BankInformation[6] := '';
                     if CountryRegion.Get(BankAccount."Country/Region Code") then
                         BankInformation[6] := CountryRegion.Name;
+
                     BankAddressInformation1 := '';
                     if BankInformation[4] <> '' then
                         BankAddressInformation1 := BankInformation[4];
-                    if BankInformation[5] <> '' then
-                        BankAddressInformation1 += ', ' + BankInformation[5];
-                    if BankInformation[6] <> '' then
-                        BankAddressInformation1 += ', ' + BankInformation[6];
+
+                    if (BankInformation[5] <> '') and (BankInformation[4] <> '') then
+                        BankAddressInformation1 += ', ' + BankInformation[5]
+                    else if BankInformation[5] <> '' then
+                        BankAddressInformation1 += BankInformation[5];
+
+                    if (BankInformation[6] <> '') and ((BankInformation[5] <> '') or (BankInformation[4] <> '')) then
+                        BankAddressInformation1 += ', ' + BankInformation[6]
+                    else if BankInformation[6] <> '' then
+                        BankAddressInformation1 += BankInformation[6];
 
                     BankInformation[7] := BankAccount.IBAN;
                     BankInformation[8] := BankAccount."SWIFT Code";
                     BankInformation[9] := BankAccount."Currency Code";
+
                 end;
 
                 Consignee := '';
+                FormatAddress.FormatAddr(ConsigneeAddress, Header."Bill-to Name", '', '', Header."Bill-to Address", Header."Bill-to Address 2",
+                Header."Bill-to City", Header."Bill-to Post Code", '', Header."Bill-to Country/Region Code");
+                Consignee := ConsigneeAddress[1] + '<br>' + ConsigneeAddress[2] + '<br>' + ConsigneeAddress[3] + '<br>' + ConsigneeAddress[4] + '<br>' + ConsigneeAddress[5] + '<br>' + ConsigneeAddress[6] + '<br>' + ConsigneeAddress[7] + '<br>' + ConsigneeAddress[8];
+                /*
                 Consignee += '<b>' + Header."Bill-to Name" + '</b>';
                 if Header."Bill-to Address" <> '' then
                     Consignee += '<br>' + Header."Bill-to Address";
@@ -514,12 +531,13 @@ report 50000 "Customized Proforma Invoice"
 
                 if BillToCountryName <> '' then
                     Consignee += '<br>' + BillToCountryName;
-
-                BankAddressInformation2 := '';
+                */
+                /*BankAddressInformation2 := '';
                 if CompanyAddress[4] <> '' then
                     BankAddressInformation2 := CompanyAddress[4];
                 if CompanyAddress[5] <> '' then
                     BankAddressInformation2 += ', ' + CompanyAddress[5];
+                    */
                 CalcFields("Work Description");
                 ShowWorkDescription := "Work Description".HasValue();
             end;
@@ -634,6 +652,7 @@ report 50000 "Customized Proforma Invoice"
         Consignee: Text;
         BankAddressInformation1: Text;
         BankAddressInformation2: Text;
+        ConsigneeAddress: array[8] of Text[100];
 
     local procedure FormatDocumentFields(SalesHeader: Record "Sales Header")
     var
