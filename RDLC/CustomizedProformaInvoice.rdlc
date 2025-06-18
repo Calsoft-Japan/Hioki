@@ -24,7 +24,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>1.83441cm</Height>
+                  <Height>5.24685cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -54,11 +54,11 @@
                                 </TablixColumns>
                                 <TablixRows>
                                   <TablixRow>
-                                    <Height>0.3cm</Height>
+                                    <Height>0.6cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="ItemLbl">
+                                          <Textbox Name="Textbox115">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -77,6 +77,7 @@
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
+                                            <rd:DefaultName>Textbox115</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Style>None</Style>
@@ -94,7 +95,7 @@
                                       <TablixCell />
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="QuantityLbl">
+                                          <Textbox Name="Textbox117">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -113,6 +114,7 @@
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
+                                            <rd:DefaultName>Textbox117</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Style>None</Style>
@@ -128,7 +130,7 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="PriceLbl">
+                                          <Textbox Name="Textbox118">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -147,6 +149,7 @@
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
+                                            <rd:DefaultName>Textbox118</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Style>None</Style>
@@ -162,7 +165,7 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="AmountLbl">
+                                          <Textbox Name="Textbox119">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -181,6 +184,7 @@
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
+                                            <rd:DefaultName>Textbox119</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Style>None</Style>
@@ -196,7 +200,7 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="Textbox33">
+                                          <Textbox Name="Textbox45">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -267,6 +271,7 @@
                                             </Style>
                                           </Textbox>
                                           <ColSpan>2</ColSpan>
+                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
@@ -432,6 +437,7 @@
                                               <PaddingRight>2pt</PaddingRight>
                                             </Style>
                                           </Textbox>
+                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell>
@@ -631,6 +637,7 @@
                                             </Style>
                                           </Textbox>
                                           <ColSpan>2</ColSpan>
+                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
@@ -768,6 +775,7 @@
                                             </Style>
                                           </Textbox>
                                           <ColSpan>2</ColSpan>
+                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
@@ -904,6 +912,7 @@
                                             </Style>
                                           </Textbox>
                                           <ColSpan>2</ColSpan>
+                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
@@ -1021,13 +1030,12 @@
                               <TablixRowHierarchy>
                                 <TablixMembers>
                                   <TablixMember>
-                                    <Group Name="Header">
+                                    <Group Name="DocumentNo">
                                       <GroupExpressions>
                                         <GroupExpression>=Fields!DocumentNo.Value</GroupExpression>
                                       </GroupExpressions>
                                       <PageBreak>
                                         <BreakLocation>Between</BreakLocation>
-                                        <ResetPageNumber>true</ResetPageNumber>
                                       </PageBreak>
                                     </Group>
                                     <SortExpressions>
@@ -1036,31 +1044,48 @@
                                       </SortExpression>
                                     </SortExpressions>
                                     <TablixMembers>
-                                      <TablixMember />
                                       <TablixMember>
+                                        <KeepWithGroup>After</KeepWithGroup>
+                                        <RepeatOnNewPage>true</RepeatOnNewPage>
+                                      </TablixMember>
+                                      <TablixMember>
+                                        <Group Name="Header">
+                                          <GroupExpressions>
+                                            <GroupExpression>=Fields!DocumentNo.Value</GroupExpression>
+                                          </GroupExpressions>
+                                        </Group>
+                                        <SortExpressions>
+                                          <SortExpression>
+                                            <Value>=Fields!DocumentNo.Value</Value>
+                                          </SortExpression>
+                                        </SortExpressions>
                                         <TablixMembers>
                                           <TablixMember>
-                                            <Group Name="Line" />
+                                            <TablixMembers>
+                                              <TablixMember>
+                                                <Group Name="Line" />
+                                              </TablixMember>
+                                            </TablixMembers>
                                           </TablixMember>
+                                          <TablixMember />
+                                          <TablixMember>
+                                            <Visibility>
+                                              <Hidden>=IIF(Last(Fields!TotalVATAmount.Value)&gt;0,false,true)</Hidden>
+                                            </Visibility>
+                                          </TablixMember>
+                                          <TablixMember>
+                                            <Visibility>
+                                              <Hidden>=IIF(Last(Fields!TotalVATAmount.Value)&gt;0,false,true)</Hidden>
+                                            </Visibility>
+                                          </TablixMember>
+                                          <TablixMember />
                                         </TablixMembers>
                                       </TablixMember>
-                                      <TablixMember />
-                                      <TablixMember>
-                                        <Visibility>
-                                          <Hidden>=IIF(Last(Fields!TotalVATAmount.Value)&gt;0,false,true)</Hidden>
-                                        </Visibility>
-                                      </TablixMember>
-                                      <TablixMember>
-                                        <Visibility>
-                                          <Hidden>=IIF(Last(Fields!TotalVATAmount.Value)&gt;0,false,true)</Hidden>
-                                        </Visibility>
-                                      </TablixMember>
-                                      <TablixMember />
                                     </TablixMembers>
                                   </TablixMember>
                                 </TablixMembers>
                               </TablixRowHierarchy>
-                              <Height>1.64685cm</Height>
+                              <Height>1.94685cm</Height>
                               <Width>19.15059cm</Width>
                               <Style>
                                 <Border>
@@ -1172,7 +1197,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
             <PageBreak>
               <BreakLocation>End</BreakLocation>
             </PageBreak>
-            <Height>1.83441cm</Height>
+            <Height>5.24685cm</Height>
             <Width>19.2cm</Width>
             <Style>
               <Border>
@@ -1181,7 +1206,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>1.88127cm</Height>
+        <Height>5.24685cm</Height>
         <Style />
       </Body>
       <Width>19.2cm</Width>
@@ -2669,7 +2694,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Code.GetData(33)</Value>
+                      <Value>=Code.GetData(18)</Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>

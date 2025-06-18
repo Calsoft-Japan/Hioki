@@ -1994,7 +1994,7 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Format(Today(),"MMM. dd,yyyy")</Value>
+                      <Value>=Format(First(Fields!PostingDate.Value, "DataSet_Result"),"MMM. dd, yyyy")</Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -3557,6 +3557,9 @@ QARTEx4Zgiv2an+pYI4ZGiOzax/3rwHQcl/3cw/2dp/3nTGN3K73ft+S8fb3gr8ZULr0g3/4ZcE4fY/4
         </Field>
         <Field Name="Consignee">
           <DataField>Consignee</DataField>
+        </Field>
+        <Field Name="PostingDate">
+          <DataField>PostingDate</DataField>
         </Field>
         <Field Name="LineNo_Line">
           <DataField>LineNo_Line</DataField>

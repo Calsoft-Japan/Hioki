@@ -518,6 +518,10 @@ report 50001 "Commercial Invoice"
             column(Consignee; Consignee)
             {
             }
+            column(PostingDate; "Posting Date")
+            {
+
+            }
             dataitem(Line; "Sales Invoice Line")
             {
                 DataItemLink = "Document No." = field("No.");
@@ -1189,6 +1193,7 @@ report 50001 "Commercial Invoice"
                 PurchaseInformation: Text;
                 str: Text;
                 char10: Char;
+                FormatAddress: Codeunit "Format Address";
             begin
                 CurrReport.Language := LanguageMgt.GetLanguageIdOrDefault("Language Code");
                 CurrReport.FormatRegion := LanguageMgt.GetFormatRegionOrDefault("Format Region");
@@ -1247,7 +1252,7 @@ report 50001 "Commercial Invoice"
                         RemainingAmountTxt := '';
 
                 OnAfterGetSalesHeader(Header);
-
+                /*
                 PurchInvHeader.Reset();
                 PurchInvHeader.SetRange("Order No.", CompanyInfo."Office Code" + '-' + "Order No.");
                 if PurchInvHeader.FindFirst() then begin
@@ -1256,6 +1261,7 @@ report 50001 "Commercial Invoice"
                         PurchaseNo.Add(PurchaseInformation);
                     end;
                 end;
+                
                 PurchaseOrderInformation := '';
                 char10 := 10;
                 foreach str in PurchaseNo do begin
@@ -1264,6 +1270,14 @@ report 50001 "Commercial Invoice"
                     else
                         PurchaseOrderInformation := str;
                 end;
+                */
+
+                //PurchaseOrderInformation := Header."No." + '/' + Header."Order No.";
+                if Header."Order No." <> '' then
+                    PurchaseOrderInformation := Header."No." + '/' + Header."Order No."
+                else
+                    PurchaseOrderInformation := Header."No.";
+
                 BillToCountryName := '';
                 if CountryRegion.Get(Header."Bill-to Country/Region Code") then
                     BillToCountryName := CountryRegion.Name;
@@ -1289,7 +1303,10 @@ report 50001 "Commercial Invoice"
                 end;
 
                 Consignee := '';
-                Consignee += '<b>' + Header."Bill-to Name" + '</b>';
+                FormatAddress.FormatAddr(ConsigneeAddress, Header."Bill-to Name", '', '', Header."Bill-to Address", Header."Bill-to Address 2",
+                Header."Bill-to City", Header."Bill-to Post Code", Header."Bill-to County", Header."Bill-to Country/Region Code");
+                Consignee := '<b>' + ConsigneeAddress[1] + '</b><br>' + ConsigneeAddress[2] + '<br>' + ConsigneeAddress[3] + '<br>' + ConsigneeAddress[4] + '<br>' + ConsigneeAddress[5] + '<br>' + ConsigneeAddress[6] + '<br>' + ConsigneeAddress[7] + '<br>' + ConsigneeAddress[8];
+                /*Consignee += '<b>' + Header."Bill-to Name" + '</b>';
                 if Header."Bill-to Address" <> '' then
                     Consignee += '<br>' + Header."Bill-to Address";
                 if Header."Bill-to Address 2" <> '' then
@@ -1300,7 +1317,7 @@ report 50001 "Commercial Invoice"
                     Consignee += '<br>' + Header."Bill-to City";
                 if BillToCountryName <> '' then
                     Consignee += '<br>' + BillToCountryName;
-
+                */
                 TotalQuantity := 0;
                 TotalSubTotal := 0;
                 TotalInvDiscAmount := 0;
@@ -1579,6 +1596,7 @@ report 50001 "Commercial Invoice"
         ShiptoCountryName: Text[50];
         HSCode: text[50];
         Consignee: Text;
+        ConsigneeAddress: array[8] of Text[100];
 
     local procedure LogInteractionTemplateExists(): Boolean
     begin

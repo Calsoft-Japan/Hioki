@@ -471,10 +471,6 @@ report 50000 "Customized Proforma Invoice"
                 BankAccount.SetRange("Use as Default for Currency", true);
                 BankAccount.SetRange("Currency Code", "Currency Code");
                 if BankAccount.FindFirst() then begin
-                    /*FormatAddress.FormatAddr(BankInformation, BankAccount.Name, '', '', BankAccount.Address, BankAccount."Address 2",
-                BankAccount.City, BankAccount."Post Code", '', BankAccount."Country/Region Code");
-                    BankAddressInformation1 := BankInformation[1] + '<br>' + BankInformation[2] + '<br>' + BankInformation[3] + '<br>' + BankInformation[4] + '<br>' + BankInformation[5] + '<br>' + BankInformation[6];
-                    */
                     BankInformation[1] := BankAccount.Name;
                     BankInformation[2] := BankAccount.Address;
 
@@ -511,8 +507,8 @@ report 50000 "Customized Proforma Invoice"
 
                 Consignee := '';
                 FormatAddress.FormatAddr(ConsigneeAddress, Header."Bill-to Name", '', '', Header."Bill-to Address", Header."Bill-to Address 2",
-                Header."Bill-to City", Header."Bill-to Post Code", '', Header."Bill-to Country/Region Code");
-                Consignee := ConsigneeAddress[1] + '<br>' + ConsigneeAddress[2] + '<br>' + ConsigneeAddress[3] + '<br>' + ConsigneeAddress[4] + '<br>' + ConsigneeAddress[5] + '<br>' + ConsigneeAddress[6] + '<br>' + ConsigneeAddress[7] + '<br>' + ConsigneeAddress[8];
+                Header."Bill-to City", Header."Bill-to Post Code", Header."Bill-to County", Header."Bill-to Country/Region Code");
+                Consignee := '<b>' + ConsigneeAddress[1] + '</b><br>' + ConsigneeAddress[2] + '<br>' + ConsigneeAddress[3] + '<br>' + ConsigneeAddress[4] + '<br>' + ConsigneeAddress[5] + '<br>' + ConsigneeAddress[6] + '<br>' + ConsigneeAddress[7] + '<br>' + ConsigneeAddress[8];
                 /*
                 Consignee += '<b>' + Header."Bill-to Name" + '</b>';
                 if Header."Bill-to Address" <> '' then
