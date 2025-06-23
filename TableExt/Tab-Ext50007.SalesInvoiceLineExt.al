@@ -9,6 +9,12 @@ tableextension 50007 "SalesInvoiceLineExt" extends "Sales Invoice Line"
             CalcFormula = lookup("Sales Invoice Header"."Sell-to Country/Region Code" where("No." = FIELD("Document No.")));
         }
 
+        field(50001; "Currency Code"; Code[10])
+        {
+            FieldClass = FlowField;
+            CalcFormula = lookup("Sales Invoice Header"."Currency Code" where("No." = FIELD("Document No.")));
+        }
+
 
     }
 }
