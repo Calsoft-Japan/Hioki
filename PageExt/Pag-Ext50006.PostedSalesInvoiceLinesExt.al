@@ -8,6 +8,10 @@ pageextension 50006 PostedSalesInvoiceLinesEx extends "Posted Sales Invoice Line
             {
                 ApplicationArea = All;
             }
+            field("Currency Code"; Rec."Currency Code")
+            {
+                ApplicationArea = All;
+            }
 
             field("Shipment Date"; Rec."Shipment Date")
             {
