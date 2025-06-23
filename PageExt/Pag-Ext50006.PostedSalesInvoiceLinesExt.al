@@ -4,7 +4,7 @@ pageextension 50006 PostedSalesInvoiceLinesEx extends "Posted Sales Invoice Line
     {
         addafter("Quantity")
         {
-            field("Sell-to Country/Region Code"; Rec."Sell-to Country/Region Code")
+            field("Ship-to Country/Region Code"; Rec."Ship-to Country/Region Code")
             {
                 ApplicationArea = All;
             }
