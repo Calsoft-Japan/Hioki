@@ -3,10 +3,10 @@ tableextension 50008 "SalesCr.MemoLineExt" extends "Sales Cr.Memo Line"
 
     fields
     {
-        field(50000; "Sell-to Country/Region Code"; Code[10])
+        field(50000; "Ship-to Country/Region Code"; Code[10])
         {
             FieldClass = FlowField;
-            CalcFormula = lookup("Sales Cr.Memo Header"."Sell-to Country/Region Code" where("No." = FIELD("Document No.")));
+            CalcFormula = lookup("Sales Cr.Memo Header"."Ship-to Country/Region Code" where("No." = FIELD("Document No.")));
         }
 
     }
