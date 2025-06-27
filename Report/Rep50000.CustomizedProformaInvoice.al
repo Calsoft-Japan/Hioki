@@ -55,6 +55,9 @@ report 50000 "Customized Proforma Invoice"
             column(CompanyAddress8; CompanyAddress[8])
             {
             }
+            column(CompanyAddress9; CompanyAddress[9])
+            {
+            }
             column(CustomerAddress1; CustomerAddress[1])
             {
             }
@@ -508,32 +511,34 @@ report 50000 "Customized Proforma Invoice"
                 Consignee := '';
                 FormatAddress.FormatAddr(ConsigneeAddress, Header."Bill-to Name", '', '', Header."Bill-to Address", Header."Bill-to Address 2",
                 Header."Bill-to City", Header."Bill-to Post Code", Header."Bill-to County", Header."Bill-to Country/Region Code");
-                Consignee := '<b>' + ConsigneeAddress[1] + '</b><br>' + ConsigneeAddress[2] + '<br>' + ConsigneeAddress[3] + '<br>' + ConsigneeAddress[4] + '<br>' + ConsigneeAddress[5] + '<br>' + ConsigneeAddress[6] + '<br>' + ConsigneeAddress[7] + '<br>' + ConsigneeAddress[8];
-                /*
-                Consignee += '<b>' + Header."Bill-to Name" + '</b>';
-                if Header."Bill-to Address" <> '' then
-                    Consignee += '<br>' + Header."Bill-to Address";
+                CompressArray(ConsigneeAddress);
+                //Consignee := '<b>' + ConsigneeAddress[1] + '</b><br>' + ConsigneeAddress[2] + '<br>' + ConsigneeAddress[3] + '<br>' + ConsigneeAddress[4] + '<br>' + ConsigneeAddress[5] + '<br>' + ConsigneeAddress[6];
 
-                if Header."Bill-to Address 2" <> '' then
-                    Consignee += '<br>' + Header."Bill-to Address 2";
+                Consignee += '<b>' + ConsigneeAddress[1] + '</b>';
+                if ConsigneeAddress[2] <> '' then
+                    Consignee += '<br>' + ConsigneeAddress[2];
 
-                if Header."Bill-to Post Code" <> '' then
-                    Consignee += '<br>' + Header."Bill-to Post Code";
+                if ConsigneeAddress[3] <> '' then
+                    Consignee += '<br>' + ConsigneeAddress[3];
 
-                if (Header."Bill-to City" <> '') and (Header."Bill-to Post Code" <> '') then
-                    Consignee += ' ' + Header."Bill-to City"
-                else if Header."Bill-to City" <> '' then
-                    Consignee += '<br>' + Header."Bill-to City";
+                if ConsigneeAddress[4] <> '' then
+                    Consignee += '<br>' + ConsigneeAddress[4];
 
-                if BillToCountryName <> '' then
-                    Consignee += '<br>' + BillToCountryName;
-                */
+                if ConsigneeAddress[5] <> '' then
+                    Consignee += '<br>' + ConsigneeAddress[5];
+
+                if ConsigneeAddress[6] <> '' then
+                    Consignee += '<br>' + ConsigneeAddress[6];
                 /*BankAddressInformation2 := '';
                 if CompanyAddress[4] <> '' then
                     BankAddressInformation2 := CompanyAddress[4];
                 if CompanyAddress[5] <> '' then
                     BankAddressInformation2 += ', ' + CompanyAddress[5];
                     */
+                CompanyAddress[7] := CompanyInformation."E-Mail";
+                CompanyAddress[8] := CompanyInformation."Home Page";
+                CompanyAddress[9] := CompanyInformation."Phone No.";
+                CompressArray(CompanyAddress);
                 CalcFields("Work Description");
                 ShowWorkDescription := "Work Description".HasValue();
             end;
@@ -621,7 +626,7 @@ report 50000 "Customized Proforma Invoice"
         Currency: Record Currency;
         SellToContact: Record Contact;
         BillToContact: Record Contact;
-        CompanyAddress: array[8] of Text[100];
+        CompanyAddress: array[9] of Text[100];
         CustomerAddress: array[8] of Text[100];
         WorkDescriptionInStream: InStream;
         SalesPersonLblText: Text[50];
