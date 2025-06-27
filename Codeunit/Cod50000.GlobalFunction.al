@@ -37,4 +37,19 @@ codeunit 50000 "GlobalFunction"
         SalesHeader.CalcFields("Case Mark");
     end;
 
+    //FDD006 Requisition Worksheet -Carry Out Action Message validation 
+    [EventSubscriber(ObjectType::Page, Page::"Req. Worksheet", 'OnBeforeActionEvent', 'CarryOutActionMessage', false, false)]
+    local procedure OnBeforeCarryOutActionMessage(var Rec: Record "Requisition Line")
+    begin
+        Rec.Reset();
+        Rec.SetFilter("Accept Action Message", '%1', TRUE);
+        Rec.SetFilter("Purchasing Code", 'SPEC ORDER');
+        if Rec.FindFirst() then begin
+            Rec.SetFilter("Sales Order No.", '<>%1', Rec."Sales Order No.");
+            if Rec.Count > 0 then begin
+                Error('Please select Accept Action Message for only one Sales Order No. to create a special purchase order.');
+            end;
+        end;
+    end;
+
 }
