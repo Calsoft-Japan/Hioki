@@ -172,9 +172,9 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox12</rd:DefaultName>
-                              <Top>2.4342cm</Top>
+                              <Top>2.68253cm</Top>
                               <Left>14.2197cm</Left>
-                              <Height>0.6cm</Height>
+                              <Height>0.38695cm</Height>
                               <Width>4.77018cm</Width>
                               <ZIndex>4</ZIndex>
                               <Style>
@@ -183,8 +183,6 @@
                                 </Border>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
                               </Style>
                             </Textbox>
                             <Textbox Name="Textbox16">
@@ -353,7 +351,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>Shipment Method:</Value>
+                                      <Value>Incoterms:</Value>
                                       <Style>
                                         <FontStyle>Normal</FontStyle>
                                         <FontFamily>Segoe UI</FontFamily>
@@ -368,10 +366,10 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox124</rd:DefaultName>
-                              <Top>2.4342cm</Top>
-                              <Left>11.441cm</Left>
-                              <Height>0.6cm</Height>
-                              <Width>2.7787cm</Width>
+                              <Top>2.68253cm</Top>
+                              <Left>12.46762cm</Left>
+                              <Height>0.38695cm</Height>
+                              <Width>1.75208cm</Width>
                               <ZIndex>10</ZIndex>
                               <Style>
                                 <Border>
@@ -379,8 +377,6 @@
                                 </Border>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
                               </Style>
                             </Textbox>
                           </ReportItems>
@@ -2622,9 +2618,9 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
                   </Paragraphs>
                   <rd:DefaultName>CompanyPhoneNo</rd:DefaultName>
                   <Top>2.75569cm</Top>
-                  <Left>3.88959cm</Left>
+                  <Left>0.20441cm</Left>
                   <Height>0.38806cm</Height>
-                  <Width>5.09393cm</Width>
+                  <Width>8.77911cm</Width>
                   <ZIndex>5</ZIndex>
                   <Style>
                     <Border>
@@ -2656,9 +2652,9 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
                   </Paragraphs>
                   <rd:DefaultName>CompanyHomePage</rd:DefaultName>
                   <Top>2.36763cm</Top>
-                  <Left>3.92788cm</Left>
+                  <Left>0.20441cm</Left>
                   <Height>0.38806cm</Height>
-                  <Width>5.05562cm</Width>
+                  <Width>8.77909cm</Width>
                   <ZIndex>6</ZIndex>
                   <Style>
                     <Border>
@@ -2866,6 +2862,36 @@ Cstr(Fields!CompanyAddress4.Value)+","+Cstr(Fields!CompanyAddress5.Value))</Hidd
                 </Border>
               </Style>
             </Rectangle>
+            <Textbox Name="Textbox17">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value />
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox17</rd:DefaultName>
+              <Top>5.76039cm</Top>
+              <Left>0.0383cm</Left>
+              <Height>0.6cm</Height>
+              <Width>10.04467cm</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
           </ReportItems>
           <Style>
             <Border>

@@ -14,6 +14,12 @@ tableextension 50007 "SalesInvoiceLineExt" extends "Sales Invoice Line"
             FieldClass = FlowField;
             CalcFormula = lookup("Sales Invoice Header"."Currency Code" where("No." = FIELD("Document No.")));
         }
+        field(50002; "Order Date"; Date)
+        {
+            FieldClass = FlowField;
+            CalcFormula = lookup("Sales Invoice Header"."Order Date" where("No." = FIELD("Document No.")));
+        }
+
 
 
     }

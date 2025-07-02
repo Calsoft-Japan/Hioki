@@ -12,8 +12,11 @@ pageextension 50006 PostedSalesInvoiceLinesEx extends "Posted Sales Invoice Line
             {
                 ApplicationArea = All;
             }
-
             field("Shipment Date"; Rec."Shipment Date")
+            {
+                ApplicationArea = All;
+            }
+            field("Order Date"; Rec."Order Date")
             {
                 ApplicationArea = All;
             }

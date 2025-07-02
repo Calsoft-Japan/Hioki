@@ -535,9 +535,9 @@ report 50000 "Customized Proforma Invoice"
                 if CompanyAddress[5] <> '' then
                     BankAddressInformation2 += ', ' + CompanyAddress[5];
                     */
-                CompanyAddress[7] := CompanyInformation."E-Mail";
-                CompanyAddress[8] := CompanyInformation."Home Page";
-                CompanyAddress[9] := CompanyInformation."Phone No.";
+                CompanyAddress[7] := CompanyInformation."Phone No.";
+                CompanyAddress[8] := CompanyInformation."E-Mail";
+                CompanyAddress[9] := CompanyInformation."Home Page";
                 CompressArray(CompanyAddress);
                 CalcFields("Work Description");
                 ShowWorkDescription := "Work Description".HasValue();

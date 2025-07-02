@@ -24,7 +24,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>5.24685cm</Height>
+                  <Height>3.39477cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1192,7 +1192,8 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
             <PageBreak>
               <BreakLocation>End</BreakLocation>
             </PageBreak>
-            <Height>5.24685cm</Height>
+            <Left>0.0241in</Left>
+            <Height>3.39477cm</Height>
             <Width>19.2cm</Width>
             <Style>
               <Border>
@@ -1201,10 +1202,10 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>5.24685cm</Height>
+        <Height>3.52706cm</Height>
         <Style />
       </Body>
-      <Width>19.2cm</Width>
+      <Width>19.26121cm</Width>
       <Page>
         <PageHeader>
           <Height>7.21604cm</Height>
@@ -1228,7 +1229,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                 </Image>
               </ReportItems>
               <KeepTogether>true</KeepTogether>
-              <Left>13.14438cm</Left>
+              <Left>13.20559cm</Left>
               <Height>3.01604cm</Height>
               <Width>6.05562cm</Width>
               <Style>
@@ -1290,6 +1291,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                 </Paragraph>
               </Paragraphs>
               <Top>1.32743cm</Top>
+              <Left>0.0241in</Left>
               <Height>11pt</Height>
               <Width>5.05562cm</Width>
               <ZIndex>1</ZIndex>
@@ -1320,6 +1322,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                   </Style>
                 </Paragraph>
               </Paragraphs>
+              <Left>0.0241in</Left>
               <Height>0.76298cm</Height>
               <Width>10.28763cm</Width>
               <ZIndex>2</ZIndex>
@@ -1353,6 +1356,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
               </Paragraphs>
               <rd:DefaultName>DocumentDate</rd:DefaultName>
               <Top>0.93937cm</Top>
+              <Left>0.0241in</Left>
               <Height>0.38806cm</Height>
               <Width>5.05562cm</Width>
               <ZIndex>3</ZIndex>
@@ -1384,7 +1388,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>2.38195cm</Top>
-              <Left>0cm</Left>
+              <Left>0.0612cm</Left>
               <Height>0.16in</Height>
               <Width>1.87336cm</Width>
               <ZIndex>4</ZIndex>
@@ -1416,7 +1420,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
               </Paragraphs>
               <rd:DefaultName>Textbox3</rd:DefaultName>
               <Top>2.38195cm</Top>
-              <Left>1.87336cm</Left>
+              <Left>1.93456cm</Left>
               <Height>0.92031cm</Height>
               <Width>8.03322cm</Width>
               <ZIndex>5</ZIndex>
@@ -1447,7 +1451,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
               </Paragraphs>
               <rd:DefaultName>Textbox10</rd:DefaultName>
               <Top>3.30226cm</Top>
-              <Left>0cm</Left>
+              <Left>0.0612cm</Left>
               <Height>0.16in</Height>
               <Width>1.87336cm</Width>
               <ZIndex>6</ZIndex>
@@ -1478,7 +1482,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
               </Paragraphs>
               <rd:DefaultName>Textbox10</rd:DefaultName>
               <Top>3.70866cm</Top>
-              <Left>0cm</Left>
+              <Left>0.0612cm</Left>
               <Height>0.16in</Height>
               <Width>1.87336cm</Width>
               <ZIndex>7</ZIndex>
@@ -1509,7 +1513,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
               </Paragraphs>
               <rd:DefaultName>Textbox10</rd:DefaultName>
               <Top>4.11506cm</Top>
-              <Left>0cm</Left>
+              <Left>0.0612cm</Left>
               <Height>0.16in</Height>
               <Width>1.87336cm</Width>
               <ZIndex>8</ZIndex>
@@ -1551,7 +1555,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
               </Paragraphs>
               <rd:DefaultName>Textbox10</rd:DefaultName>
               <Top>4.52146cm</Top>
-              <Left>0cm</Left>
+              <Left>0.0612cm</Left>
               <Height>0.16in</Height>
               <Width>1.87336cm</Width>
               <ZIndex>9</ZIndex>
@@ -1582,7 +1586,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
               </Paragraphs>
               <rd:DefaultName>Textbox28</rd:DefaultName>
               <Top>3.30226cm</Top>
-              <Left>1.87336cm</Left>
+              <Left>1.93456cm</Left>
               <Height>0.4064cm</Height>
               <Width>8.03322cm</Width>
               <ZIndex>10</ZIndex>
@@ -1613,7 +1617,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
               </Paragraphs>
               <rd:DefaultName>Textbox28</rd:DefaultName>
               <Top>3.70866cm</Top>
-              <Left>1.87336cm</Left>
+              <Left>1.93456cm</Left>
               <Height>0.4064cm</Height>
               <Width>8.03322cm</Width>
               <ZIndex>11</ZIndex>
@@ -1644,7 +1648,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
               </Paragraphs>
               <rd:DefaultName>Textbox28</rd:DefaultName>
               <Top>4.11506cm</Top>
-              <Left>1.87336cm</Left>
+              <Left>1.93456cm</Left>
               <Height>0.4064cm</Height>
               <Width>8.03322cm</Width>
               <ZIndex>12</ZIndex>
@@ -1675,7 +1679,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
               </Paragraphs>
               <rd:DefaultName>Textbox28</rd:DefaultName>
               <Top>4.52146cm</Top>
-              <Left>1.87336cm</Left>
+              <Left>1.93456cm</Left>
               <Height>0.4064cm</Height>
               <Width>8.03322cm</Width>
               <ZIndex>13</ZIndex>
@@ -1924,40 +1928,6 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                     <PaddingRight>5pt</PaddingRight>
                   </Style>
                 </Textbox>
-                <Textbox Name="CompanyHomePage">
-                  <CanGrow>true</CanGrow>
-                  <KeepTogether>true</KeepTogether>
-                  <Paragraphs>
-                    <Paragraph>
-                      <TextRuns>
-                        <TextRun>
-                          <Value>=Code.GetData(26)</Value>
-                          <Style>
-                            <FontFamily>Segoe UI</FontFamily>
-                            <FontSize>8pt</FontSize>
-                          </Style>
-                        </TextRun>
-                      </TextRuns>
-                      <Style>
-                        <TextAlign>Right</TextAlign>
-                      </Style>
-                    </Paragraph>
-                  </Paragraphs>
-                  <rd:DefaultName>CompanyHomePage</rd:DefaultName>
-                  <Top>3.14375cm</Top>
-                  <Left>3.88959cm</Left>
-                  <Height>0.38806cm</Height>
-                  <Width>5.05562cm</Width>
-                  <ZIndex>7</ZIndex>
-                  <Style>
-                    <Border>
-                      <Color>LightGrey</Color>
-                      <Style>None</Style>
-                    </Border>
-                    <PaddingLeft>5pt</PaddingLeft>
-                    <PaddingRight>5pt</PaddingRight>
-                  </Style>
-                </Textbox>
                 <Textbox Name="CompanyAddress6">
                   <CanGrow>true</CanGrow>
                   <KeepTogether>true</KeepTogether>
@@ -1982,7 +1952,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                   <Left>0.20441cm</Left>
                   <Height>0.38806cm</Height>
                   <Width>8.7408cm</Width>
-                  <ZIndex>8</ZIndex>
+                  <ZIndex>7</ZIndex>
                   <Style>
                     <Border>
                       <Color>LightGrey</Color>
@@ -1995,7 +1965,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
               </ReportItems>
               <KeepTogether>true</KeepTogether>
               <Top>3.19243cm</Top>
-              <Left>10.08297cm</Left>
+              <Left>10.14418cm</Left>
               <Height>3.84722cm</Height>
               <Width>8.94521cm</Width>
               <ZIndex>14</ZIndex>
@@ -2012,7 +1982,7 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Shipment Method:</Value>
+                      <Value>Incoterms:</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Segoe UI</FontFamily>
@@ -2028,9 +1998,9 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
               </Paragraphs>
               <rd:DefaultName>Textbox47</rd:DefaultName>
               <Top>4.92786cm</Top>
-              <Left>0cm</Left>
+              <Left>0.0612cm</Left>
               <Height>0.16in</Height>
-              <Width>2.86092cm</Width>
+              <Width>1.83808cm</Width>
               <ZIndex>15</ZIndex>
               <Style>
                 <Border>
@@ -2061,9 +2031,9 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
               </Paragraphs>
               <rd:DefaultName>Textbox48</rd:DefaultName>
               <Top>4.92786cm</Top>
-              <Left>2.86092cm</Left>
+              <Left>1.89928cm</Left>
               <Height>0.4064cm</Height>
-              <Width>7.04566cm</Width>
+              <Width>8.0685cm</Width>
               <ZIndex>16</ZIndex>
               <Style>
                 <Border>
@@ -2083,448 +2053,448 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>8.27494cm</Height>
+          <Height>9.49046cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
-            <Textbox Name="Textbox17">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Shipment:</Value>
-                      <Style>
-                        <FontFamily>Segoe UI</FontFamily>
-                        <FontSize>7pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox17</rd:DefaultName>
-              <Top>0.10583cm</Top>
-              <Left>0.12241cm</Left>
-              <Height>0.4cm</Height>
-              <Width>2.17759cm</Width>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox18">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>To be made on or about 30 days after receiving the purchase order</Value>
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontFamily>Segoe UI</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Normal</FontWeight>
-                        <TextDecoration>None</TextDecoration>
-                        <Color>#000000</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox18</rd:DefaultName>
-              <Top>0.11196cm</Top>
-              <Left>2.3cm</Left>
-              <Height>0.16in</Height>
-              <Width>9.56122cm</Width>
-              <ZIndex>1</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox23">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Others:</Value>
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Normal</FontWeight>
-                        <TextDecoration>None</TextDecoration>
-                        <Color>#000000</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>       1. Prepayment refers to the payment made in advance by the consignee before collecting the items from the warehouse.</Value>
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Normal</FontWeight>
-                        <TextDecoration>None</TextDecoration>
-                        <Color>#000000</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Left</TextAlign>
-                  </Style>
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>       2. Bank charges for transferring the payment are to be borne by payer. The amount received by Hioki must exactly match the amount specified in the PI.</Value>
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                        <TextDecoration>None</TextDecoration>
-                        <Color>#000000</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Left</TextAlign>
-                  </Style>
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>       3. As a general policy, unless otherwise agreed in writing, a purchase order may not be modified nor cancelled after this Proforma Invoice is sent. </Value>
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Normal</FontWeight>
-                        <TextDecoration>None</TextDecoration>
-                        <Color>#000000</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Left</TextAlign>
-                  </Style>
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>       4. NO refund/replacement/return acceptable for any reason.</Value>
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Normal</FontWeight>
-                        <TextDecoration>None</TextDecoration>
-                        <Color>#000000</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Left</TextAlign>
-                  </Style>
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>       5. Calibration certificate, data sheet, and traceability chart are not free of cost. Please place an order separately.</Value>
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Normal</FontWeight>
-                        <TextDecoration>None</TextDecoration>
-                        <Color>#000000</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Left</TextAlign>
-                  </Style>
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value />
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Normal</FontWeight>
-                        <TextDecoration>None</TextDecoration>
-                        <Color>#000000</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Left</TextAlign>
-                  </Style>
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Thank you for your order. We trust our products will fulfill your requirements.</Value>
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Normal</FontWeight>
-                        <TextDecoration>None</TextDecoration>
-                        <Color>#000000</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox23</rd:DefaultName>
-              <Top>3.39204cm</Top>
-              <Left>0cm</Left>
-              <Height>2.57587cm</Height>
-              <Width>19.02818cm</Width>
-              <ZIndex>2</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox37">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>="&lt;b&gt;IBAN: &lt;/b&gt;" + Code.GetData(30)</Value>
-                      <MarkupType>HTML</MarkupType>
-                      <Style>
-                        <FontFamily>Segoe UI</FontFamily>
-                        <FontSize>7pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox25</rd:DefaultName>
-              <Top>0.51196cm</Top>
-              <Left>12.46762cm</Left>
-              <Height>0.4cm</Height>
-              <Width>5.60978cm</Width>
-              <ZIndex>3</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox38">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>="&lt;b&gt;Swift Code: &lt;/b&gt;" + Code.GetData(31)</Value>
-                      <MarkupType>HTML</MarkupType>
-                      <Style>
-                        <FontFamily>Segoe UI</FontFamily>
-                        <FontSize>7pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox25</rd:DefaultName>
-              <Top>0.91196cm</Top>
-              <Left>12.46762cm</Left>
-              <Height>0.4cm</Height>
-              <Width>5.60978cm</Width>
-              <ZIndex>4</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox39">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>="&lt;b&gt;Currency: &lt;/b&gt;" + Code.GetData(32)</Value>
-                      <MarkupType>HTML</MarkupType>
-                      <Style>
-                        <FontFamily>Segoe UI</FontFamily>
-                        <FontSize>7pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox25</rd:DefaultName>
-              <Top>1.31196cm</Top>
-              <Left>12.46762cm</Left>
-              <Height>0.4cm</Height>
-              <Width>5.60978cm</Width>
-              <ZIndex>5</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Image Name="Image1">
-              <Source>Embedded</Source>
-              <Value>seal</Value>
-              <Sizing>FitProportional</Sizing>
-              <Top>4.60658cm</Top>
-              <Left>13.57059cm</Left>
-              <Height>3.27187cm</Height>
-              <Width>5.42232cm</Width>
-              <ZIndex>6</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Image>
-            <Textbox Name="Textbox40">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>HIOKI MEA FZCO</Value>
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>8pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                        <TextDecoration>None</TextDecoration>
-                        <Color>#000000</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox40</rd:DefaultName>
-              <Top>6.10902cm</Top>
-              <Left>10.4592cm</Left>
-              <Height>0.45184cm</Height>
-              <Width>2.21425cm</Width>
-              <ZIndex>7</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Image Name="Image2">
-              <Source>Embedded</Source>
-              <Value>Signature1</Value>
-              <MIMEType>image/png</MIMEType>
-              <Sizing>FitProportional</Sizing>
-              <Top>6.59614cm</Top>
-              <Left>10.4592cm</Left>
-              <Height>1.59943cm</Height>
-              <Width>2.4656cm</Width>
-              <ZIndex>8</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Image>
-            <Textbox Name="Textbox42">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>AUTHORIZED SIGNATURE</Value>
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>8pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                        <TextDecoration>None</TextDecoration>
-                        <Color>#000000</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox42</rd:DefaultName>
-              <Top>7.27845cm</Top>
-              <Left>10.4592cm</Left>
-              <Height>0.6cm</Height>
-              <Width>3.7605cm</Width>
-              <ZIndex>9</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <TopBorder>
-                  <Style>Solid</Style>
-                </TopBorder>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Rectangle Name="Rectangle2">
+            <Rectangle Name="Rectangle3">
               <ReportItems>
+                <Textbox Name="Textbox17">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Shipment:</Value>
+                          <Style>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <FontSize>7pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox17</rd:DefaultName>
+                  <Top>0.03968cm</Top>
+                  <Left>0.18361cm</Left>
+                  <Height>0.4cm</Height>
+                  <Width>2.17759cm</Width>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox18">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>To be made on or about 30 days after receiving the purchase order</Value>
+                          <Style>
+                            <FontStyle>Normal</FontStyle>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <FontSize>7pt</FontSize>
+                            <FontWeight>Normal</FontWeight>
+                            <TextDecoration>None</TextDecoration>
+                            <Color>#000000</Color>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox18</rd:DefaultName>
+                  <Top>0.04581cm</Top>
+                  <Left>2.3612cm</Left>
+                  <Height>0.16in</Height>
+                  <Width>9.56122cm</Width>
+                  <ZIndex>1</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox23">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Others:</Value>
+                          <Style>
+                            <FontStyle>Normal</FontStyle>
+                            <FontFamily>Calibri</FontFamily>
+                            <FontSize>7pt</FontSize>
+                            <FontWeight>Normal</FontWeight>
+                            <TextDecoration>None</TextDecoration>
+                            <Color>#000000</Color>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>       1. Prepayment refers to the payment made in advance by the consignee before collecting the items from the warehouse.</Value>
+                          <Style>
+                            <FontStyle>Normal</FontStyle>
+                            <FontFamily>Calibri</FontFamily>
+                            <FontSize>7pt</FontSize>
+                            <FontWeight>Normal</FontWeight>
+                            <TextDecoration>None</TextDecoration>
+                            <Color>#000000</Color>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>       2. Bank charges for transferring the payment are to be borne by payer. The amount received by Hioki must exactly match the amount specified in the PI.</Value>
+                          <Style>
+                            <FontStyle>Normal</FontStyle>
+                            <FontFamily>Calibri</FontFamily>
+                            <FontSize>7pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                            <TextDecoration>None</TextDecoration>
+                            <Color>#000000</Color>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>       3. As a general policy, unless otherwise agreed in writing, a purchase order may not be modified nor cancelled after this Proforma Invoice is sent. </Value>
+                          <Style>
+                            <FontStyle>Normal</FontStyle>
+                            <FontFamily>Calibri</FontFamily>
+                            <FontSize>7pt</FontSize>
+                            <FontWeight>Normal</FontWeight>
+                            <TextDecoration>None</TextDecoration>
+                            <Color>#000000</Color>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>       4. NO refund/replacement/return acceptable for any reason.</Value>
+                          <Style>
+                            <FontStyle>Normal</FontStyle>
+                            <FontFamily>Calibri</FontFamily>
+                            <FontSize>7pt</FontSize>
+                            <FontWeight>Normal</FontWeight>
+                            <TextDecoration>None</TextDecoration>
+                            <Color>#000000</Color>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>       5. Calibration certificate, data sheet, and traceability chart are not free of cost. Please place an order separately.</Value>
+                          <Style>
+                            <FontStyle>Normal</FontStyle>
+                            <FontFamily>Calibri</FontFamily>
+                            <FontSize>7pt</FontSize>
+                            <FontWeight>Normal</FontWeight>
+                            <TextDecoration>None</TextDecoration>
+                            <Color>#000000</Color>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value />
+                          <Style>
+                            <FontStyle>Normal</FontStyle>
+                            <FontFamily>Calibri</FontFamily>
+                            <FontSize>7pt</FontSize>
+                            <FontWeight>Normal</FontWeight>
+                            <TextDecoration>None</TextDecoration>
+                            <Color>#000000</Color>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Thank you for your order. We trust our products will fulfill your requirements.</Value>
+                          <Style>
+                            <FontStyle>Normal</FontStyle>
+                            <FontFamily>Calibri</FontFamily>
+                            <FontSize>7pt</FontSize>
+                            <FontWeight>Normal</FontWeight>
+                            <TextDecoration>None</TextDecoration>
+                            <Color>#000000</Color>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox23</rd:DefaultName>
+                  <Top>3.3259cm</Top>
+                  <Left>0.0612cm</Left>
+                  <Height>2.57587cm</Height>
+                  <Width>19.02818cm</Width>
+                  <ZIndex>2</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingBottom>2pt</PaddingBottom>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox37">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>="&lt;b&gt;IBAN: &lt;/b&gt;" + Code.GetData(30)</Value>
+                          <MarkupType>HTML</MarkupType>
+                          <Style>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <FontSize>7pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox25</rd:DefaultName>
+                  <Top>0.44582cm</Top>
+                  <Left>12.52883cm</Left>
+                  <Height>0.4cm</Height>
+                  <Width>5.60978cm</Width>
+                  <ZIndex>3</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingBottom>2pt</PaddingBottom>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox38">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>="&lt;b&gt;Swift Code: &lt;/b&gt;" + Code.GetData(31)</Value>
+                          <MarkupType>HTML</MarkupType>
+                          <Style>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <FontSize>7pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox25</rd:DefaultName>
+                  <Top>0.84582cm</Top>
+                  <Left>12.52883cm</Left>
+                  <Height>0.4cm</Height>
+                  <Width>5.60978cm</Width>
+                  <ZIndex>4</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingBottom>2pt</PaddingBottom>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox39">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>="&lt;b&gt;Currency: &lt;/b&gt;" + Code.GetData(32)</Value>
+                          <MarkupType>HTML</MarkupType>
+                          <Style>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <FontSize>7pt</FontSize>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox25</rd:DefaultName>
+                  <Top>1.24581cm</Top>
+                  <Left>12.52883cm</Left>
+                  <Height>0.4cm</Height>
+                  <Width>5.60978cm</Width>
+                  <ZIndex>5</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingBottom>2pt</PaddingBottom>
+                  </Style>
+                </Textbox>
+                <Image Name="Image1">
+                  <Source>Embedded</Source>
+                  <Value>seal</Value>
+                  <Sizing>FitProportional</Sizing>
+                  <Top>4.54044cm</Top>
+                  <Left>13.63179cm</Left>
+                  <Height>3.27187cm</Height>
+                  <Width>5.42232cm</Width>
+                  <ZIndex>6</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Image>
+                <Textbox Name="Textbox40">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>HIOKI MEA FZCO</Value>
+                          <Style>
+                            <FontStyle>Normal</FontStyle>
+                            <FontFamily>Calibri</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                            <TextDecoration>None</TextDecoration>
+                            <Color>#000000</Color>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox40</rd:DefaultName>
+                  <Top>6.04288cm</Top>
+                  <Left>10.5204cm</Left>
+                  <Height>0.45184cm</Height>
+                  <Width>2.21425cm</Width>
+                  <ZIndex>7</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingBottom>2pt</PaddingBottom>
+                  </Style>
+                </Textbox>
+                <Image Name="Image2">
+                  <Source>Embedded</Source>
+                  <Value>Signature1</Value>
+                  <MIMEType>image/png</MIMEType>
+                  <Sizing>FitProportional</Sizing>
+                  <Top>6.53cm</Top>
+                  <Left>10.5204cm</Left>
+                  <Height>1.59943cm</Height>
+                  <Width>2.4656cm</Width>
+                  <ZIndex>8</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                </Image>
+                <Textbox Name="Textbox42">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>AUTHORIZED SIGNATURE</Value>
+                          <Style>
+                            <FontStyle>Normal</FontStyle>
+                            <FontFamily>Calibri</FontFamily>
+                            <FontSize>8pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                            <TextDecoration>None</TextDecoration>
+                            <Color>#000000</Color>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style />
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox42</rd:DefaultName>
+                  <Top>7.2123cm</Top>
+                  <Left>10.5204cm</Left>
+                  <Height>0.6cm</Height>
+                  <Width>3.7605cm</Width>
+                  <ZIndex>9</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <TopBorder>
+                      <Style>Solid</Style>
+                    </TopBorder>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingBottom>2pt</PaddingBottom>
+                  </Style>
+                </Textbox>
                 <Textbox Name="Textbox19">
                   <CanGrow>true</CanGrow>
                   <KeepTogether>true</KeepTogether>
@@ -2547,10 +2517,11 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                  <Top>0.0064cm</Top>
-                  <Left>0.12241cm</Left>
+                  <Top>0.44609cm</Top>
+                  <Left>0.18361cm</Left>
                   <Height>0.4cm</Height>
                   <Width>2.17759cm</Width>
+                  <ZIndex>10</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -2581,11 +2552,11 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox20</rd:DefaultName>
-                  <Top>0.01253cm</Top>
-                  <Left>2.3cm</Left>
+                  <Top>0.45222cm</Top>
+                  <Left>2.3612cm</Left>
                   <Height>0.16in</Height>
                   <Width>9.56122cm</Width>
-                  <ZIndex>1</ZIndex>
+                  <ZIndex>11</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -2613,11 +2584,11 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox24</rd:DefaultName>
-                  <Top>0.41893cm</Top>
-                  <Left>2.3cm</Left>
+                  <Top>0.85862cm</Top>
+                  <Left>2.3612cm</Left>
                   <Height>0.16in</Height>
                   <Width>9.56122cm</Width>
-                  <ZIndex>2</ZIndex>
+                  <ZIndex>12</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -2644,11 +2615,11 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox25</rd:DefaultName>
-                  <Top>0.82533cm</Top>
-                  <Left>2.3cm</Left>
+                  <Top>1.26501cm</Top>
+                  <Left>2.3612cm</Left>
                   <Height>0.16in</Height>
                   <Width>9.56122cm</Width>
-                  <ZIndex>3</ZIndex>
+                  <ZIndex>13</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -2675,11 +2646,11 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox25</rd:DefaultName>
-                  <Top>1.23173cm</Top>
-                  <Left>2.3cm</Left>
+                  <Top>1.67142cm</Top>
+                  <Left>2.3612cm</Left>
                   <Height>0.16in</Height>
                   <Width>9.56122cm</Width>
-                  <ZIndex>4</ZIndex>
+                  <ZIndex>14</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -2707,11 +2678,11 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox25</rd:DefaultName>
-                  <Top>1.63813cm</Top>
-                  <Left>2.3cm</Left>
+                  <Top>2.07782cm</Top>
+                  <Left>2.3612cm</Left>
                   <Height>0.16in</Height>
                   <Width>9.56122cm</Width>
-                  <ZIndex>5</ZIndex>
+                  <ZIndex>15</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -2739,11 +2710,11 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox25</rd:DefaultName>
-                  <Top>2.04453cm</Top>
-                  <Left>2.3cm</Left>
+                  <Top>2.48421cm</Top>
+                  <Left>2.3612cm</Left>
                   <Height>0.16in</Height>
                   <Width>9.56122cm</Width>
-                  <ZIndex>6</ZIndex>
+                  <ZIndex>16</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -2771,11 +2742,11 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox25</rd:DefaultName>
-                  <Top>2.45093cm</Top>
-                  <Left>2.3cm</Left>
+                  <Top>2.89061cm</Top>
+                  <Left>2.3612cm</Left>
                   <Height>0.16in</Height>
                   <Width>9.56122cm</Width>
-                  <ZIndex>7</ZIndex>
+                  <ZIndex>17</ZIndex>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -2786,11 +2757,10 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                 </Textbox>
               </ReportItems>
               <KeepTogether>true</KeepTogether>
-              <Top>0.50583cm</Top>
-              <Left>0cm</Left>
-              <Height>2.88621cm</Height>
-              <Width>11.86122cm</Width>
-              <ZIndex>10</ZIndex>
+              <Top>1.32135cm</Top>
+              <Left>0.03527cm</Left>
+              <Height>8.16911cm</Height>
+              <Width>19.15059cm</Width>
               <Visibility>
                 <Hidden>=Globals!PageNumber&lt;&gt;Globals!TotalPages</Hidden>
               </Visibility>
@@ -2800,35 +2770,30 @@ Cstr(Fields!BankAddressInformation2.Value))</Hidden>
                 </Border>
               </Style>
             </Rectangle>
-            <Textbox Name="Textbox46">
+            <Textbox Name="Textbox69">
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>To be continued</Value>
+                      <Value>-To be Continued-</Value>
                       <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontFamily>Segoe UI</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Normal</FontWeight>
-                        <TextDecoration>None</TextDecoration>
-                        <Color>#000000</Color>
+                        <FontSize>20pt</FontSize>
                       </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox46</rd:DefaultName>
-              <Top>0.50583cm</Top>
-              <Left>0.12241cm</Left>
-              <Height>0.41893cm</Height>
-              <Width>11.73881cm</Width>
-              <ZIndex>11</ZIndex>
+              <rd:DefaultName>Textbox69</rd:DefaultName>
+              <Top>0.28396cm</Top>
+              <Left>5.95579cm</Left>
+              <Height>1.05357cm</Height>
+              <Width>6.32512cm</Width>
+              <ZIndex>1</ZIndex>
               <Visibility>
-                <Hidden>=Globals!PageNumber＝Globals!TotalPages</Hidden>
+                <Hidden>=Globals!PageNumber=Globals!TotalPages</Hidden>
               </Visibility>
               <Style>
                 <Border>
