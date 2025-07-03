@@ -1133,9 +1133,9 @@ Cstr(Fields!CompanyAddress6.Value) + Chr(177) +
 Cstr(Fields!CompanyLegalOffice.Value) + Chr(177) +
 Cstr(Fields!CompanyVATRegNo.Value) + Chr(177) +
 Cstr(Fields!SalesPersonName.Value) + Chr(177) +
-Cstr(Fields!CompanyEMail.Value) + Chr(177) +
-Cstr(Fields!CompanyHomePage.Value) + Chr(177) +
-Cstr(Fields!CompanyPhoneNo.Value) + Chr(177) +
+Cstr(Fields!CompanyAddress7.Value) + Chr(177) +
+Cstr(Fields!CompanyAddress8.Value) + Chr(177) +
+Cstr(Fields!CompanyAddress9.Value) + Chr(177) +
 Cstr(Fields!BankInformation1.Value) + Chr(177) +
 Cstr(Fields!BankInformation2.Value)+ Cstr(Fields!BankInformation3.Value) + Chr(177) +
 Cstr(Fields!BankAddressInformation1.Value) + Chr(177) +

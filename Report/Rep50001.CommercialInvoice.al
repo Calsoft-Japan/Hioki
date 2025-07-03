@@ -1318,8 +1318,8 @@ report 50001 "Commercial Invoice"
                 if BillToCountryName <> '' then
                     Consignee += '<br>' + BillToCountryName;
                 */
-                CompanyAddr[7] := CompanyInfo."Home Page";
-                CompanyAddr[8] := CompanyInfo."Phone No.";
+                CompanyAddr[7] := CompanyInfo."Phone No.";
+                CompanyAddr[8] := CompanyInfo."Home Page";
                 CompressArray(CompanyAddr);
                 TotalQuantity := 0;
                 TotalSubTotal := 0;
